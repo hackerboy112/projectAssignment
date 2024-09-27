@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "build",
+          "type": "shell",
+          "command": "C:/Users/Abraham/w64devkit/bin/g++.exe",
+          "args": [
+              "-g",
+              "${file}",
+              "-o",
+              "${fileDirname}/${fileBasenameNoExtension}.exe"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true  
+          },
+          "problemMatcher": ["$gcc"],
+          "detail": "Compile the C++ file using g++ from w64devkit"
+      }
+  ]
+}
